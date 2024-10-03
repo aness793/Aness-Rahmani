@@ -22,11 +22,14 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm install && npm run gh-build 
+        run: npm install 
+          - name: Copy index.html to 404.html
+          run: cp dist/index.html dist/404.html
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          publish_dir: dist/second-portfolio/browser  # Adjust this path if necessary
+          publish_dir: dist/second-portfolio/  # Adjust this path if necessary
