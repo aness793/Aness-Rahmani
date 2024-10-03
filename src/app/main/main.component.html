@@ -1,0 +1,126 @@
+<h1 class='error' >this portfolio is not designed for small devices yet</h1>
+<div class="container">
+    <section class="about" *ngIf="s==='About'">
+        <div class="image">
+            <div class="img"><img src="pfp.jpg" alt=""></div>
+            <div class="id">
+                <h3><span class="wrapper">Name:</span>  Aness Rahmani</h3>
+            <h3><span class="wrapper">Country:</span>  Algeria</h3>
+            <h3><span class="wrapper">Native Language:</span> Arabic</h3>
+            </div>
+        </div>
+        <div class="yapping">
+            <h3><span class="wrapper">Spoken Languages:</span>
+                <p>Arabic (Native)</p>
+                <p>English (C2) </p>
+                <p>French (B2) </p>
+                <p>Russian (B1) </p>
+            </h3>
+            <h3><span class="wrapper">Major:</span>
+                <p>telecommunication systems engineering</p>
+            </h3>
+            <h3>
+                <span class="wrapper">Programming Languages:</span>
+                <p>html and css(+4yrs) </p>
+                <p>javaScript(+3yrs) </p>
+                <p>TypeScript(+1yr) </p>
+                <p>python(+3yrs) </p>
+                <p>java(Basic) </p>
+                <p>c++(Basic) </p>
+            </h3>
+            <h3><span class="wrapper">hobbies: </span> 
+                <p><span class="icon material-symbols-outlined">
+                    hiking
+                    </span> Hiking</p> 
+                <p><span class="icon material-symbols-outlined">
+                    auto_stories
+                    </span>
+                    Reading</p> 
+                <p><span class="icon material-symbols-outlined">
+                    photo_camera
+                    </span>
+                    Photography</p> 
+            </h3>
+        </div>
+    </section>
+    <section class="skills" *ngIf="s=='Skills'">
+        <div class="hard-skills">
+            <div class="skill-title">
+                <h1>hard skills</h1>
+            </div>
+            <div class="skill-set">
+                    <p>express js</p>
+                    <p>node js</p>
+                    <p>JQuery</p>
+                    <p>MySQL</p>
+                    <p>mongoose</p>
+                    <p>mongoDB</p>
+                    <p>Html (Advanced)</p>
+                    <p>angular (advanced)</p>
+                    <p>Python (advanced)</p>
+                    <p>typescript (advanced)</p>
+                    <p>Git</p>
+                    
+                    
+                
+            </div>
+            
+        </div>
+        <div class="soft-skills">
+            <div class="skill-title">
+                <h3>soft skills</h3>
+            </div>
+            <div class="skill-set">
+                    <p>Effective communication </p>
+                    <p>Active listening</p>
+                    <p>Teamwork</p>
+                    <p>Conflict Resolution</p>
+                    <p>Flexibility </p>
+                    <p>Continuous learning</p>
+                    <p>Time management </p>
+                    <p>organization</p>
+            </div>
+        </div>
+    </section>
+    <section class="experience" *ngIf="s=='Experience'">
+            <div class="previous"><h3 (click)="previous()"><span class="material-symbols-outlined">
+                arrow_back_ios_new
+                </span></h3></div>
+            <div class="content">
+                <!-- <div class="main-title">
+                    {{projects[i].title}}
+                </div> -->
+                <div class="project-title">
+                    {{projects[i].title}}
+                </div>
+                <div class="project-image">
+                    <img src="{{projects[i].img}} " alt="">
+                </div>
+                <div class="project link">
+                    <a href="{{projects[i].url}} " target="_blank" rel="noopener noreferrer">View Project <span class="material-symbols-outlined">
+                        open_in_new
+                        </span></a>
+                </div>
+                 <p>{{i+1}}/{{projects.length}} </p>
+            </div>
+            <div class="next"><h3 (click)="next()"><span class="material-symbols-outlined">
+                arrow_forward_ios
+                </span></h3></div>
+    </section>
+    <section class="certifications" *ngIf="s=='Certifications'">
+
+    </section>
+    <section class="goals" *ngIf="s==='Goals'">
+        <h3><span>current goals : </span>Becoming a Full-stack developer and improve my leadership skills</h3>
+        <h3><span>Future goals : </span>expand my knowledge and advance my career by becoming an AI developer</h3>
+    </section>
+    <section class="resume" *ngIf="s==='Resume'">
+        <!-- <object data="Aness resume.pdf" type="application/pdf" width="600" height="400" ></object> -->
+         <div class="pdf">
+            <iframe src="Aness Rahmani.pdf#toolbar=0"  frameborder="0" height="450" allowfullscreen   ></iframe>
+            <a href="Aness Rahmani.pdf">Download the file <span class="material-symbols-outlined">
+                download
+                </span></a>
+         </div>
+    </section>
+</div>

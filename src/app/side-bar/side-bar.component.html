@@ -1,0 +1,30 @@
+    <!-- <h1 *ngIf="isSmallScreen" [ngClass]="{'closed':!seen}" class='menu' (click)="appear()"><i class='bx bx-menu'></i></h1> -->
+
+<div class="container" >
+    <div class="image">
+        <img src="pfp.jpg" alt="">
+        <p class='name'>Aness Rahmani</p>
+        <h3>Front-end developer </h3>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li routerLink="/About" [class.highlighted]="gg=='About' " (click)="redirect('About')"><a    >About</a></li>
+            <li routerLink="/Skills" [class.highlighted]="gg=='Skills' "  (click)="redirect('Skills')"><a>skills</a></li>
+            <li routerLink="/Experience" [class.highlighted]="gg=='Experience' "  (click)="redirect('Experience')"><a>Experience</a></li>
+            <!-- <li><a routerLink="">Projects</a></li> -->
+            <!-- <li><a routerLink="/Certifications" (click)="redirect('certifications')">certifications</a></li> -->
+            <li routerLink="/Goals"  [class.highlighted]="gg=='Goals' "  (click)="redirect('Goals')"><a>Goals</a></li>
+            <li routerLink="/Resume" [class.highlighted]="gg=='Resume' "  (click)="redirect('Resume')"><a>Resume</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <h3>contact me :</h3>
+        <div class="socials">
+           <a class="txt email" href="mailto:d.rahmanianess.gmail.com"> <i class='bx bxl-gmail' ></i></a>
+           <a style="z-index: 9999;" class="txt" href="https://www.linkedin.com/in/rahmani-aness-1bb2a424b/"><i class='bx bxl-linkedin-square' ></i></a>
+           <a class="txt" href="https://t.me/aness_as" ><i class='bx bxl-telegram' ></i><br></a>
+           <a class="txt" href="https://github.com/aness793/"><i class='bx bxl-github' ></i><br></a>
+           <a class="txt" href="https://www.upwork.com/freelancers/anessr"><i class='bx bxl-upwork' ></i></a>
+        </div>
+    </div>
+</div>

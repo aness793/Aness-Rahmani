@@ -1,0 +1,21 @@
+body {
+    background-color:var(--deep);	
+    overflow-x: hidden;
+}
+.container {
+    width: clamp(90svw,100svw,110svw);
+    height: clamp(90svh,100svh,110svh);
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 1rem;
+    padding: .5rem .5rem;
+    box-sizing: border-box;
+    overflow-x: clip;
+    overflow-y: clip;
+}
+app-side-bar {
+    grid-column: 1/2;
+}
+app-main {
+    grid-column: 2/3;
+}

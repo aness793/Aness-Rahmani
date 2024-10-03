@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    /* --bg:#36454F; */
+    --deep:#161311;
+    /* --main:#FAF9F6; */
+    --bg:#241f1c;
+    /* --deep:white; */
+    --main:#e7dac7;
+    --second:#a9816e;
+
+}
+*{
+    margin:0;
+    border:0;
+    padding: 0;
+    font-family:inter;
+    outline: 0;
+    outline-offset: 0;
+    box-sizing: border-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-transform: capitalize;
+}
+a{
+    text-decoration:none;
+    color: inherit;
+}
+body {
+    background-color:var(--deep);	
+}
